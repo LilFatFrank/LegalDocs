@@ -1,0 +1,22 @@
+.background {
+    background-color: #D0D0D0;
+    padding: 5%;
+    border-radius: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.displayEncode {
+    background-color: #80ff00;
+    color: 	#228B22;
+    margin-top: 2%;
+    padding: 1%;
+    border-color: #228B22;
+}
+
+.displayDecode {
+    background-color: #00ffff;
+    color: #4000ff;
+    margin-top: 2%;
+    padding: 1%;
+    border-color: #4000ff;
+}
