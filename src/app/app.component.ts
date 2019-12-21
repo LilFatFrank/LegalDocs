@@ -31,6 +31,8 @@ export class AppComponent implements OnInit {
       for (const i of this.reversedEncodeText) {
         if (i === ' ') {
           this.finalEncodeText = this.finalEncodeText + ' ';
+        } else if (i.match(/^[0-9!@#$%^&*()_+\-=\[\]{};':"\\|,.<>\/?]*$/)) {
+          this.finalEncodeText = this.finalEncodeText + i;
         } else if (i === 'x') {
           this.finalEncodeText = this.finalEncodeText + this.alphabets[0];
         } else if (i === 'y') {
@@ -64,6 +66,8 @@ export class AppComponent implements OnInit {
       for (const i of this.reversedDecodeText) {
         if (i === ' ') {
           this.finalDecodeText = this.finalDecodeText + ' ';
+        }  else if (i.match(/^[0-9!@#$%^&*()_+\-=\[\]{};':"\\|,.<>\/?]*$/)) {
+          this.finalDecodeText = this.finalDecodeText + i;
         } else if (i === 'a') {
           this.finalDecodeText = this.finalDecodeText + this.alphabets[this.alphabets.length - 3];
         } else if (i === 'b') {
